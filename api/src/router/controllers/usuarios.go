@@ -14,7 +14,7 @@ func BuscarUsuarios(w http.ResponseWriter, r *http.Request) {
 
 // BuscarUsuario busca um úsuario salvo no banco
 func BuscarUsuario(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Buscar único usuário!"))
+	w.Write([]byte("Buscando único usuário!"))
 }
 
 // AtualizandoUsuario altera as informações de um úsuario no banco

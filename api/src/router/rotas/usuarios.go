@@ -39,7 +39,14 @@ var rotasUsuarios = []Rota{
 	{
 		URI:                "/usuarios/{usuaruiId}/seguir",
 		Metodo:             http.MethodPost,
-		Funcao:             controllers.seguirUsuario,
+		Funcao:             controllers.SeguirUsuario,
+		RequerAutenticacao: true,
+	},
+	{
+		URI:                "/usuarios/{usuaruiId}/parar-de-seguir",
+		Metodo:             http.MethodPost,
+		Funcao:             controllers.PararDeSeguir,
 		RequerAutenticacao: true,
 	},
 }
+

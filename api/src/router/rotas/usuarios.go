@@ -36,4 +36,10 @@ var rotasUsuarios = []Rota{
 		Funcao:             controllers.DeletarUsuario,
 		RequerAutenticacao: true,
 	},
+	{
+		URI:                "/usuarios/{usuaruiId}/seguir",
+		Metodo:             http.MethodPost,
+		Funcao:             controllers.seguirUsuario,
+		RequerAutenticacao: true,
+	},
 }

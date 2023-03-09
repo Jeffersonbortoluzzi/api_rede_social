@@ -59,6 +59,11 @@ func CriarPublicacao(w http.ResponseWriter, r *http.Request) {
 }
 
 // BuscarPublicacoes traz publicacoes que aparecem no feed do usuario
+func BuscarPublicacoes(w http.ResponseWriter, r *http.Request) {
+
+}
+
+// BuscarPublicacao traz uma publicacao
 func BuscarPublicacao(w http.ResponseWriter, r *http.Request) {
 	parametros := mux.Vars(r)
 	publicacaoID, erro := strconv.ParseUint(parametros["publicacaoId"], 10, 64)
@@ -82,11 +87,6 @@ func BuscarPublicacao(w http.ResponseWriter, r *http.Request) {
 	}
 
 	respostas.JSON(w, http.StatusOK, publicacao)
-}
-
-// BuscarPublicacao traz uma publicacao
-func BuscarPublicacao(w http.ResponseWriter, r *http.Request) {
-
 }
 
 // AtualizarPublicacao altera os dados de uma publicacao

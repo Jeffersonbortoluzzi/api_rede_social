@@ -25,7 +25,6 @@ func (publicacao *Publicacao) Preparar() error {
 
 	publicacao.formatar()
 	return nil
-
 }
 
 func (publicacao *Publicacao) validar() error {
